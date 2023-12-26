@@ -1,0 +1,15 @@
+.feature {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  img {
+    width: 80px;
+  }
+  p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.7;
+  }
+}

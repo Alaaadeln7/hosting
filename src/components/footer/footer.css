@@ -1,0 +1,93 @@
+:root {
+  --praimary-color: #186cff;
+  --scoundry-color: #ff9836;
+  --btn-color: #253446;
+  --white-color: #fff;
+  --dark-color: #333;
+  --transition: all 0.3s ease;
+}
+
+footer {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  .container {
+    .content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        span {
+          color: var(--white-color);
+        }
+        .social-media {
+          ul {
+            li {
+              display: inline-block;
+              margin: 5px;
+              padding: 5px;
+              a {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--white-color);
+                background-color: #ffffff36;
+                border-radius: 10px;
+
+                &:hover {
+                  color: var(--praimary-color);
+                  background-color: var(--white-color);
+                }
+                svg {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .products,
+      .company,
+      .support {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+          color: var(--white-color);
+        }
+        ul {
+          li {
+            margin: 12px;
+            color: var(--white-color);
+            position: relative;
+            a {
+              color: var(--white-color);
+              &:hover {
+                color: var(--praimary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  hr {
+    width: 80%;
+  }
+  .copy-right {
+    color: var(--white-color);
+    text-align: center;
+    padding: 2%;
+  }
+}
